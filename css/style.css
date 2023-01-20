@@ -249,11 +249,11 @@ h1, h2, h3, h4, h5, h6 {
   fill: #FF847C;
 }
 .section-heading h2 {
-  font-size: 80px;
-  color: #FF847C;
-  display: block;
-  padding-bottom: 20px;
-  line-height: 1.5;
+	font-size: 80px;
+	color: #C31F1C;
+	display: block;
+	padding-bottom: 20px;
+	line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .section-heading h2 {
