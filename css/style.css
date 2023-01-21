@@ -773,6 +773,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -20px;
 }
 
+.couple .desc h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-family: "Minion Pro", serif;
+}
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -1118,6 +1124,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 20px !important;
 }
+
 
 .groom-men img {
   margin-bottom: 20px;
