@@ -4,6 +4,7 @@
 
 	document.querySelector('video').playbackRate = 0.9;
 
+	// set navbar color on mobile
 	if(window.innerWidth < 768) {
 		document.getElementsByClassName('navbar-fixed-top')[0].style.backgroundColor = 'rgb(255,255,255)';
 	}
@@ -25,8 +26,6 @@
 			} else {
 				navbar.style.backgroundColor = 'transparent';
 			}
-		} else {
-			navbar.style.backgroundColor = 'rgb(255,255,255)';
 		}
 	});
 
@@ -37,8 +36,8 @@
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
-			(navigator.platform.indexOf("iPod") != -1)
+			(navigator.platform.indexOf("iPhone") !== -1) ||
+			(navigator.platform.indexOf("iPod") !== -1)
 	    );
 	};
 
@@ -60,7 +59,6 @@
 	};
 
 	var sliderMain = function() {
-		
 	  	$('#qbootstrap-slider-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
