@@ -15,7 +15,6 @@
 	};
 
 
-
 	// Carousel Feature Slide
 	var testimonialCarousel = function(){
 		
