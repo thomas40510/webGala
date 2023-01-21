@@ -167,12 +167,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
-  background: #fff;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 0px;
+  margin-top: 0;
   top: 0;
 }
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
