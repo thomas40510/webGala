@@ -2,18 +2,44 @@
 	
 	'use strict';
 
+	document.querySelector('video').playbackRate = 0.9;
+
+	// set navbar color on mobile
+	if(window.innerWidth < 768) {
+		document.getElementsByClassName('navbar-fixed-top')[0].style.backgroundColor = 'rgb(255,255,255)';
+	}
+
+	// change color of navbar on scroll
+	document.addEventListener('scroll', function () {
+		const navbar = document.getElementsByClassName('navbar-fixed-top')[0];
+		const maxScroll = document.getElementsByClassName('qbootstrap-hero')[0].offsetHeight;
+		// if not on mobile
+		if (window.innerWidth >= 768) {
+			if (window.scrollY > maxScroll) {
+				// background takes full width
+				navbar.style.width = '100%';
+				navbar.style.paddingRight = '10%';
+				navbar.style.paddingLeft = '10%';
+				navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+				// hover color
+				navbar.style.transition = 'background-color 0.5s ease';
+			} else {
+				navbar.style.backgroundColor = 'transparent';
+			}
+		}
+	});
+
 	// iPad and iPod detection	
 	var isiPad = function(){
-		return (navigator.platform.indexOf("iPad") != -1);
+		return (navigator.platform.indexOf("iPad") !== -1);
 	};
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
-			(navigator.platform.indexOf("iPod") != -1)
+			(navigator.platform.indexOf("iPhone") !== -1) ||
+			(navigator.platform.indexOf("iPod") !== -1)
 	    );
 	};
-
 
 
 	// Carousel Feature Slide
@@ -33,7 +59,6 @@
 	};
 
 	var sliderMain = function() {
-		
 	  	$('#qbootstrap-slider-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -252,7 +277,7 @@
 	
 
 	// Set the date we're counting down to
-		var countDownDate = new Date("Dec 02, 2017 15:37:25").getTime();
+		var countDownDate = new Date("Apr 16, 2023 19:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -282,7 +307,7 @@
 		// If the count down is finished, write some text 
 		if (distance < 0) {
 		 clearInterval(x);
-		 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
+		 document.getElementById("demo").innerHTML = "Merci d'être venus!";
 		}
 		}, 1000);	
 	
