@@ -467,13 +467,26 @@ h3 {
   fill: #fff;
 }
 
-#homeVid {
+/*#homeVid {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
+}*/
+
+/* video height 100% but not overflowing from page */
+
+#homeVid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    z-index: -1;
 }
+
 
 #qbootstrap-slider-hero {
   min-height: 800px;
