@@ -478,13 +478,13 @@ h3 {
 /* video height 100% but not overflowing from page */
 
 #homeVid{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 
@@ -1153,7 +1153,7 @@ h3 {
 }
 
 
-.groom-men img {
+.gala-pax img {
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1161,14 +1161,22 @@ h3 {
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-  .groom-men img {
+  .gala-pax img {
     width: 300px;
     margin: 0 auto;
   }
 }
-.groom-men h3 {
+.gala-pax h3 {
   font-family: "Clicker Script", cursive;
-  font-size: 28px;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.gala-pax h4 {
+  font-family: "Minion Pro", serif;
+  color: #828282;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .wedding-events {
